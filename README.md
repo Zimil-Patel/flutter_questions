@@ -89,7 +89,7 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 
 # Q.3 Difference between Stateless Widget and Stateful Widget in Flutter
 
-| Statless Widget | Stateful Widget |
+| <div align = "center">Statless Widget </div>| Stateful Widget |
 | :-------------- | :-------------- |
 |1. Static widgets |1. Dynamic Widgets |
 |2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
