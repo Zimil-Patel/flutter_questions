@@ -291,5 +291,66 @@ By understanding and using these operators, you can perform a wide range of oper
 
 # Q.7 Difference between Final keyword And Const keyword
 
+Certainly! Here's a table summarizing the differences between the `final` and `const` keywords in Dart:
+
+| Feature                | `final`                                       | `const`                                         |
+|------------------------|-----------------------------------------------|-------------------------------------------------|
+| **Definition**         | A variable that can be assigned only once.    | A compile-time constant.                        |
+| **Initialization Time**| Initialized at runtime.                      | Initialized at compile-time.                    |
+| **Mutability**         | Immutable after the first assignment.         | Immutable and deeply constant.                  |
+| **Usage with Instance Variables** | Can be used for instance variables. | Cannot be used directly for instance variables. |
+| **Memory and Performance** | No specific compile-time optimization.    | Can lead to performance optimizations and memory savings. |
+| **Example**            | `final currentTime = DateTime.now();`         | `const pi = 3.14159;`                           |
+| **Allowed Values**     | Can be assigned dynamic values.               | Must be assigned compile-time constants.        |
+| **Typical Use Cases**  | Use when value is determined at runtime but should not change afterward. | Use when value is known at compile-time and should never change. |
+| **Usage in Classes**   | Can be used as instance variables.            | Used for static class-level constants.          |
+
+### Example Usage:
+
+#### `final` Example:
+```dart
+void main() {
+  final currentTime = DateTime.now(); // Runtime initialization
+  print('Current Time: $currentTime');
+
+  final int x = 10;
+  print('Value of x: $x');
+}
+```
+
+#### `const` Example:
+```dart
+void main() {
+  const pi = 3.14159; // Compile-time constant
+  print('Value of pi: $pi');
+
+  const int y = 20;
+  print('Value of y: $y');
+  
+  // const currentTime = DateTime.now(); // This will cause an error
+}
+```
+
+#### `final` and `const` in a Class:
+```dart
+class Circle {
+  final double radius;
+  static const double pi = 3.14159; // Compile-time constant
+
+  Circle(this.radius);
+
+  double get area => pi * radius * radius;
+}
+
+void main() {
+  final circle = Circle(5); // Instance variable initialized at runtime
+  print('Area of the circle: ${circle.area}');
+}
+```
+
+This table and examples should help clarify the differences between `final` and `const` in Dart and guide you in choosing the appropriate keyword for your specific needs.
+
+# Q.8 Difference between for loop and while loop in Dart Programming
+
 
 
