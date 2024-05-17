@@ -47,17 +47,17 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 3. **Widgets**
 4. **Design Specific Widgets**
 
-**Flutter Engine**
+### **Flutter Engine**
 
 - It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. 
 - It takes Google's open-source graphics library, Skia, to render low-level graphics.
 
-**Foundation Library**
+### **Foundation Library**
 
 - It contains all the required packages for the basic building blocks of writing a Flutter application. 
 - These libraries are written in Dart language.
 
-**Widgets**
+### **Widgets**
 
 - In Flutter, everything is a widget, which is the core concept of this framework. 
 
@@ -79,6 +79,6 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 
 - In the above example, we can see that all the components are widgets that contain child widgets. Thus, the Flutter application is itself a widget.
 
-**Design Specific Widgets**
+### **Design Specific Widgets**
 
 - The Flutter framework has two sets of widgets that conform to specific design languages. These are Material Design for Android application and Cupertino Style for IOS application.
