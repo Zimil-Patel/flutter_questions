@@ -1,4 +1,4 @@
-<div><h1>Flutter Mid-Term Questions</h1></div>
+<div align = "center"><h1>Flutter Mid-Term Questions</h1></div>
 
 # Q.1 What is Flutter?Write the Advantages and Disadvantages of Flutter
 
