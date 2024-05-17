@@ -169,4 +169,119 @@ This structure helps in organizing the project for better maintainability and sc
 |**Industry Adoption**|Google Ads, Hamilton, Reflectly, Xianyu|Facebook, Instagram, LinkedIn, Skype|
 
 
+# Q.6 What is Operator In Dart? Explain Any One
+
+In Dart, operators are special symbols that are used to perform operations on operands. They are a fundamental part of the language and help in performing various tasks such as arithmetic, comparison, and logical operations. Operators in Dart can be categorized into several types:
+
+### Types of Operators in Dart
+
+1. **Arithmetic Operators**:
+   - `+` (Addition)
+   - `-` (Subtraction)
+   - `*` (Multiplication)
+   - `/` (Division)
+   - `~/` (Integer Division)
+   - `%` (Modulus)
+
+2. **Equality and Relational Operators**:
+   - `==` (Equal to)
+   - `!=` (Not equal to)
+   - `>` (Greater than)
+   - `<` (Less than)
+   - `>=` (Greater than or equal to)
+   - `<=` (Less than or equal to)
+
+3. **Logical Operators**:
+   - `&&` (Logical AND)
+   - `||` (Logical OR)
+   - `!` (Logical NOT)
+
+4. **Bitwise Operators**:
+   - `&` (Bitwise AND)
+   - `|` (Bitwise OR)
+   - `^` (Bitwise XOR)
+   - `~` (Bitwise NOT)
+   - `<<` (Left shift)
+   - `>>` (Right shift)
+
+5. **Assignment Operators**:
+   - `=` (Assignment)
+   - `+=` (Add and assign)
+   - `-=` (Subtract and assign)
+   - `*=` (Multiply and assign)
+   - `/=` (Divide and assign)
+   - `~/=` (Integer divide and assign)
+   - `%=` (Modulus and assign)
+
+6. **Type Test Operators**:
+   - `is` (Type test)
+   - `is!` (Negative type test)
+
+7. **Conditional Operators**:
+   - `?:` (Conditional/ternary operator)
+   - `??` (If null operator)
+   - `??=` (If null assignment operator)
+
+8. **Cascade Notation**:
+   - `..` (Allows a sequence of operations on the same object)
+
+### Example: Arithmetic Operators
+
+Let’s explore Arithmetic Operators in detail.
+
+Arithmetic operators are used to perform basic arithmetic operations on numerical values.
+
+#### Example Code:
+```dart
+void main() {
+  int a = 10;
+  int b = 5;
+
+  // Addition
+  int addition = a + b;
+  print("Addition: $a + $b = $addition");
+
+  // Subtraction
+  int subtraction = a - b;
+  print("Subtraction: $a - $b = $subtraction");
+
+  // Multiplication
+  int multiplication = a * b;
+  print("Multiplication: $a * $b = $multiplication");
+
+  // Division
+  double division = a / b;
+  print("Division: $a / $b = $division");
+
+  // Integer Division
+  int intDivision = a ~/ b;
+  print("Integer Division: $a ~/ $b = $intDivision");
+
+  // Modulus
+  int modulus = a % b;
+  print("Modulus: $a % $b = $modulus");
+}
+```
+
+#### Output:
+```
+Addition: 10 + 5 = 15
+Subtraction: 10 - 5 = 5
+Multiplication: 10 * 5 = 50
+Division: 10 / 5 = 2.0
+Integer Division: 10 ~/ 5 = 2
+Modulus: 10 % 5 = 0
+```
+
+### Explanation:
+- **Addition (`+`)**: Adds two operands. In the example, `10 + 5` results in `15`.
+- **Subtraction (`-`)**: Subtracts the second operand from the first. In the example, `10 - 5` results in `5`.
+- **Multiplication (`*`)**: Multiplies two operands. In the example, `10 * 5` results in `50`.
+- **Division (`/`)**: Divides the first operand by the second, resulting in a double value. In the example, `10 / 5` results in `2.0`.
+- **Integer Division (`~/`)**: Divides the first operand by the second, resulting in an integer value. In the example, `10 ~/ 5` results in `2`.
+- **Modulus (`%`)**: Returns the remainder when the first operand is divided by the second. In the example, `10 % 5` results in `0`.
+
+By understanding and using these operators, you can perform a wide range of operations in your Dart programs, making them more functional and dynamic.
+
+
 
