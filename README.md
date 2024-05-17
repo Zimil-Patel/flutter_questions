@@ -71,7 +71,9 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 - It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
 
 **In flutter there are 2 type of widgets:**
+
 **1. Stateless Widget**
+
 **2. Stateful Widget**
 
 - we are going to explain the example with the following diagram.
