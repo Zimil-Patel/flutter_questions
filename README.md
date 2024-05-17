@@ -2,24 +2,28 @@
 
 # Q.1 What is Flutter?Write the Advantages and Disadvantages of Flutter
 
-- Flutter is a free and open-source mobile UI framework created by Google and released in May 2017. In a few words, it allows you to create a native mobile application with only one codebase. 
+- Flutter is a free and open-source mobile UI framework created by Google and released in May 2017. In a few words, it allows you to create a native mobile application with only one codebase.
+
 - This means that you can use one programming language and one codebase to create two different apps (for iOS and Android).
 
 - Flutter UI software development kit used to build natively compiled applications for mobile, web, and desktop from a single codebase. Here are some advantages and disadvantages of using Flutter:
 
 ### Advantages:
 
-1. **Single Codebase**: Flutter allows developers to write code once and deploy it across multiple platforms, including iOS, Android, web, and desktop, saving time and effort in development.
+1. **Open-Source**: Flutter is a free and open-source framework, making it accessible to a wide range of developers and companies. The large community of developers and users working with the framework helps to ensure that it continues to evolve and expand its capabilities. 
 
-2. **Fast Development**: Hot Reload feature in Flutter enables developers to see the changes made in the code almost instantly, speeding up the development process and enhancing productivity.
+2. **Cross-Platform Development**: Flutter allows developers to write code once and deploy it across multiple platforms, including iOS, Android, web, and desktop, saving time and effort in development.
 
-3. **Rich UI**: Flutter provides a rich set of customizable widgets that enable developers to create visually appealing and highly interactive user interfaces.
+3. **Fast Development**: Hot Reload feature in Flutter enables developers to see the changes made in the code almost instantly, speeding up the development process and enhancing productivity.
 
-4. **Performance**: Flutter apps are compiled directly to native machine code, resulting in high performance and smooth animations without needing a bridge to communicate with the native components.
+4. **Rich UI**: Flutter provides a rich set of customizable widgets that enable developers to create visually appealing and highly interactive user interfaces.
 
 5. **Access to Native Features**: Flutter allows developers to access native features and SDKs through platform channels, enabling integration with device-specific functionalities seamlessly.
 
 6. **Community Support**: Flutter has a large and active community of developers who contribute packages, libraries, and resources, providing extensive support and resources for developers.
+
+7. **High Performance**: Flutter offers fast and smooth animations and transitions, and is designed to run smoothly on older devices. The framework is optimized for performance, making it an attractive 
+choice for demanding mobile applications. As a result the number of targeted users increases
 
 ### Disadvantages:
 
