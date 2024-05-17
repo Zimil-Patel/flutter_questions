@@ -58,8 +58,9 @@ In Flutter, everything is a widget, which is the core concept of this framework.
 
 In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
 
-We can understand it from the hello world example created in the previous section. Here, we are going to explain the example with the following diagram.
-
+**In flutter there are 2 type of widgets:**
+**1. Stateless Widget**
+**2. Stateful Widget**
 
 In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
 
