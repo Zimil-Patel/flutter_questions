@@ -150,3 +150,29 @@ This structure helps in organizing the project for better maintainability and sc
 
 - **README.md**: 
     - A markdown file that typically contains an introduction and instructions about the project.
+
+
+# Q.5 Difference between Flutter And React native
+
+| <div align = "center"> Concept </div>| <div align = "center"> Flutter </div>| <div align = "center"> React Native </div> |
+| :------------------------------------- | :------------------------------------- | :------------------------------------- |
+|**Developed By**|It is first introduced by Google.|It is first introduced by Facebook.|
+|**Release**|May 2017|June 2015|
+|**Programming Language**|Dart to mobile app|JavaScript to mobile app|
+|**Architecture**|Flutter uses Business Logic Component (BLoC) architecture.|React Native uses Flux and Redux architecture. Flux created by Facebook, whereas Redux is the preferred choice among the community.|
+|**User Interface**|It uses custom widgets to build the UI of the app.|It uses native UI controllers to create UI of the app.|
+|**Documentation**|Flutter documentation is good, organize, and more informative. We can get everything that we want to be written in one place..|React native documentation is user-friendly but disorganized.|
+|**Performance**|The performance of the Flutter application is fast. Flutter compiles the application by using the arm C/C++ library that makes it closer to machine code and gives the app a better native performance.|The performance of the React Native app is slow in comparison to the Flutter app. Here, sometimes developers face issues while running the hybrid application architecture.|
+|**Testing**|Flutter provides a very rich set of testing features. This feature allows the developer to perform unit testing, integration testing, and widget testing.|React Native uses third-party tools that are available for testing the app.|
+|**Community Support**|It has less community support as compared to React Native.|It has very strong community support where the questions and issues can be solved quickly.|
+|**Hot Reload**|Supported|Supported|
+|**Industry Adoption**|Google Ads
+Hamilton
+Reflectly
+Xianyu|Facebook
+Instagram
+LinkedIn
+Skype|
+
+
+
