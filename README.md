@@ -49,7 +49,8 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 
 ### **Flutter Engine**
 
-- It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. 
+- It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. 
+- It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. 
 - It takes Google's open-source graphics library, Skia, to render low-level graphics.
 
 ### **Foundation Library**
