@@ -64,7 +64,9 @@ In Flutter, the application is itself a widget that contains many sub widgets. I
 
 In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
 
-We can understand it from the hello world example created in the previous section. Here, we are going to explain the example with the following diagram.
+we are going to explain the example with the following diagram.
+
+![flutter-architecture](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/d04608fd-e7fa-4e8b-9cdf-e575f15e6d34)
 
 Flutter Architecture
 In the above example, we can see that all the components are widgets that contain child widgets. Thus, the Flutter application is itself a widget.
