@@ -171,7 +171,13 @@ This structure helps in organizing the project for better maintainability and sc
 
 # Q.6 What is Operator In Dart? Explain Any One
 
-In Dart, operators are special symbols that are used to perform operations on operands. They are a fundamental part of the language and help in performing various tasks such as arithmetic, comparison, and logical operations. Operators in Dart can be categorized into several types:
+- Operators in Dart are essential tools that facilitate various operations on data values, allowing developers to manipulate variables and constants efficiently.
+
+- In Dart, operators are special symbols that are used to perform operations on operands. 
+
+- They are a fundamental part of the language and help in performing various tasks such as arithmetic, comparison, and logical operations. 
+
+- Operators in Dart can be categorized into several types:
 
 ### Types of Operators in Dart
 
@@ -282,6 +288,8 @@ Modulus: 10 % 5 = 0
 - **Modulus (`%`)**: Returns the remainder when the first operand is divided by the second. In the example, `10 % 5` results in `0`.
 
 By understanding and using these operators, you can perform a wide range of operations in your Dart programs, making them more functional and dynamic.
+
+# Q.7 Difference between Final keyword And Const keyword
 
 
 
