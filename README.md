@@ -48,28 +48,37 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 4. **Design Specific Widgets**
 
 **Flutter Engine**
-It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. It takes Google's open-source graphics library, Skia, to render low-level graphics.
+
+- It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. 
+- It takes Google's open-source graphics library, Skia, to render low-level graphics.
 
 **Foundation Library**
-It contains all the required packages for the basic building blocks of writing a Flutter application. These libraries are written in Dart language.
+
+- It contains all the required packages for the basic building blocks of writing a Flutter application. 
+- These libraries are written in Dart language.
 
 **Widgets**
-In Flutter, everything is a widget, which is the core concept of this framework. Widget in the Flutter is basically a user interface component that affects and controls the view and interface of the app. It represents an immutable description of part of the user interface and includes graphics, text, shapes, and animations that are created using widgets. The widgets are similar to the React components.
 
-In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
+- In Flutter, everything is a widget, which is the core concept of this framework. 
+
+- Widget in the Flutter is basically a user interface component that affects and controls the view and interface of the app. It represents an immutable description of part of the user interface and includes graphics, text, shapes, and animations that are created using widgets. 
+
+- The widgets are similar to the React components.
+
+- In Flutter, the application is itself a widget that contains many sub widgets. 
+
+- It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
 
 **In flutter there are 2 type of widgets:**
 **1. Stateless Widget**
 **2. Stateful Widget**
 
-In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
-
-we are going to explain the example with the following diagram.
+- we are going to explain the example with the following diagram.
 
 ![flutter-architecture](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/d04608fd-e7fa-4e8b-9cdf-e575f15e6d34)
 
-Flutter Architecture
-In the above example, we can see that all the components are widgets that contain child widgets. Thus, the Flutter application is itself a widget.
+- In the above example, we can see that all the components are widgets that contain child widgets. Thus, the Flutter application is itself a widget.
 
 **Design Specific Widgets**
-The Flutter framework has two sets of widgets that conform to specific design languages. These are Material Design for Android application and Cupertino Style for IOS application.
+
+- The Flutter framework has two sets of widgets that conform to specific design languages. These are Material Design for Android application and Cupertino Style for IOS application.
