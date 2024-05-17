@@ -85,3 +85,17 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 ### **Design Specific Widgets**
 
 - The Flutter framework has two sets of widgets that conform to specific design languages. These are Material Design for Android application and Cupertino Style for IOS application.
+
+
+# Q.3 Difference between Stateless Widget and Stateful Widget in Flutter
+
+| Statless Widget | Stateful Widget |
+| :-------------- | :-------------- |
+|1. Static widgets |1. Dynamic Widgets |
+|2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
+|3. They do not store any state information. |3. They store state information object to update widget on user interaction |
+|4. They will be rendered once and will not update themselves | 4. They can re-render if the input data changes or if Widget’s state changes. |
+|5. Loads in memory once statically | 5. Loads in memory dynamically |
+|6. Faster than stateful becase they stay consistent(immutable) |6. Slower compare to Stateless(mutable) |
+|7. method: build() |7. methods: build(), createState(), initState(), didUpdateWidget(), setState(), dispose(), etc... |
+|8. For Example, Text, Icon, and RaisedButton are Stateless Widgets.  |8. For Example Checkbox, Radio Button, and Slider are Stateful Widgets |
