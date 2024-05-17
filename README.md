@@ -99,3 +99,53 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 |6. Faster than stateful becase they stay consistent(immutable) |6. Slower compare to Stateless(mutable) |
 |7. method: build() |7. methods: build(), createState(), initState(), didUpdateWidget(), setState(), dispose(), etc... |
 |8. For Example, Text, Icon, and RaisedButton are Stateless Widgets.  |8. For Example Checkbox, Radio Button, and Slider are Stateful Widgets |
+
+# Q.4 Explain Flutter File Structure
+
+In a Flutter project, the file structure is organized in a way that helps developers manage and navigate their code efficiently. Here’s a breakdown of the typical Flutter file structure and the purpose of each directory and file:
+
+### Root Directory
+- **android/**: Contains the Android-specific code and configurations. This includes the `AndroidManifest.xml` file, Gradle build scripts, and other Android-specific resources.
+- **ios/**: Contains the iOS-specific code and configurations. This includes the `Info.plist` file, Xcode project files, and other iOS-specific resources.
+- **lib/**: The main directory for Dart code. Most of your application’s source code will reside here.
+  - **main.dart**: The entry point of the Flutter application. This is where the `main()` function and the root widget of the application are defined.
+- **test/**: Contains unit and widget tests for the Flutter application. This is where you write tests to verify your application’s functionality.
+- **build/**: Directory where the compiled application files are stored. This is typically generated automatically and should not be modified manually.
+- **web/**: Contains web-specific code and configurations if you are developing a Flutter web application. This includes the `index.html` file and other web-specific resources.
+- **.dart_tool/**: Contains Dart tooling files. This directory is generated automatically and used by the Dart and Flutter tools.
+- **.idea/**: Contains project-specific settings for Android Studio/IntelliJ IDEA.
+- **.vscode/**: Contains project-specific settings for Visual Studio Code.
+- **.gitignore**: Specifies files and directories that should be ignored by Git version control.
+- **pubspec.yaml**: A key file for Flutter projects. It manages dependencies, assets, and other project-level settings.
+- **README.md**: A markdown file that typically contains an introduction and instructions about the project.
+
+### Detailed Directory Structure
+#### android/
+- **app/**: Contains the main Android application code.
+  - **src/**: Source code directory for the Android project.
+    - **main/**: Main source set.
+      - **java/**: Java/Kotlin code for the Android app.
+      - **res/**: Resources like layouts, drawable images, and values (strings, colors, etc.).
+      - **AndroidManifest.xml**: The manifest file containing essential information about the Android app.
+
+#### ios/
+- **Runner/**: Contains the main iOS application code.
+  - **AppDelegate.swift** / **AppDelegate.m**: The entry point for the iOS app.
+  - **Info.plist**: Configuration file for iOS app settings.
+  - **Assets.xcassets/**: Asset catalog for iOS-specific images and resources.
+
+#### lib/
+- **main.dart**: The entry point of the Flutter application.
+- **src/** (commonly used): Organizes the source code into logical parts such as:
+  - **screens/**: Contains different screens or pages of the app.
+  - **widgets/**: Contains reusable widgets.
+  - **models/**: Contains data models.
+  - **services/**: Contains services for API calls, database interactions, etc.
+  - **utils/**: Contains utility functions and classes.
+  - **providers/**: Contains state management related code (if using Provider).
+
+#### test/
+- **widget_test.dart**: A sample test file to get started with writing widget tests.
+
+
+- This structure helps in organizing the project for better maintainability and scalability. It is a good practice to follow a consistent structure to make it easier for teams to collaborate and for new developers to get up to speed with the project.
