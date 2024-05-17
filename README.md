@@ -36,3 +36,37 @@ choice for demanding mobile applications. As a result the number of targeted use
 4. **Platform Differences**: Although Flutter aims for platform consistency, there may still be differences in UI and behavior across different platforms, requiring platform-specific adjustments and testing.
 
 5. **Integration with Native Code**: While Flutter provides mechanisms for integrating with native code, complex integrations may require additional effort and expertise, especially when dealing with platform-specific APIs and functionalities.
+
+
+# Q.2 . Explain the flutter architecture.
+
+In this section, we are going to discuss the architecture of the Flutter framework. The Flutter architecture mainly comprises of four components.
+
+1. **Flutter Engine**
+2. **Foundation Library**
+3. **Widgets**
+4. **Design Specific Widgets**
+
+**Flutter Engine**
+It is a portable runtime for high-quality mobile apps and primarily based on the C++ language. It implements Flutter core libraries that include animation and graphics, file and network I/O, plugin architecture, accessibility support, and a dart runtime for developing, compiling, and running Flutter applications. It takes Google's open-source graphics library, Skia, to render low-level graphics.
+
+**Foundation Library**
+It contains all the required packages for the basic building blocks of writing a Flutter application. These libraries are written in Dart language.
+
+**Widgets**
+In Flutter, everything is a widget, which is the core concept of this framework. Widget in the Flutter is basically a user interface component that affects and controls the view and interface of the app. It represents an immutable description of part of the user interface and includes graphics, text, shapes, and animations that are created using widgets. The widgets are similar to the React components.
+
+In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
+
+We can understand it from the hello world example created in the previous section. Here, we are going to explain the example with the following diagram.
+
+
+In Flutter, the application is itself a widget that contains many sub widgets. It means the app is the top-level widget, and its UI is build using one or more children widgets, which again includes sub child widgets. This feature helps you to create a complex user interface very easily.
+
+We can understand it from the hello world example created in the previous section. Here, we are going to explain the example with the following diagram.
+
+Flutter Architecture
+In the above example, we can see that all the components are widgets that contain child widgets. Thus, the Flutter application is itself a widget.
+
+**Design Specific Widgets**
+The Flutter framework has two sets of widgets that conform to specific design languages. These are Material Design for Android application and Cupertino Style for IOS application.
