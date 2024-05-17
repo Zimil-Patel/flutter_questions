@@ -166,13 +166,7 @@ This structure helps in organizing the project for better maintainability and sc
 |**Testing**|Flutter provides a very rich set of testing features. This feature allows the developer to perform unit testing, integration testing, and widget testing.|React Native uses third-party tools that are available for testing the app.|
 |**Community Support**|It has less community support as compared to React Native.|It has very strong community support where the questions and issues can be solved quickly.|
 |**Hot Reload**|Supported|Supported|
-|**Industry Adoption**|Google Ads
-Hamilton
-Reflectly
-Xianyu|Facebook
-Instagram
-LinkedIn
-Skype|
+|**Industry Adoption**|Google Ads, Hamilton, Reflectly, Xianyu|Facebook, Instagram, LinkedIn, Skype|
 
 
 
