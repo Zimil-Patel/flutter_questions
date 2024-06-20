@@ -675,6 +675,133 @@ Dart is a versatile and powerful programming language optimized for building hig
   - Easier learning curve for developers familiar with JavaScript and React.
   - Better integration with existing native applications.
 
-These questions and answers cover the fundamental concepts and comparisons required for a college exam viva on Flutter.
+### Viva Questions and Answers on Dart Programming
+
+#### 1. Introduction to Dart Programming
+
+**Q1: What is Dart programming language?**
+- **A1:** Dart is an open-source, general-purpose programming language developed by Google. It is designed for building web, server, and mobile applications and is the language used for Flutter development.
+
+**Q2: What are some key features of Dart?**
+- **A2:** Key features of Dart include:
+  - Strongly typed
+  - Object-oriented
+  - Support for both JIT and AOT compilation
+  - Asynchronous programming with `async` and `await`
+  - Rich standard library
+
+#### 2. Data Types
+
+**Q3: What are the basic data types in Dart?**
+- **A3:** Basic data types in Dart include:
+  - `int` for integers
+  - `double` for floating-point numbers
+  - `String` for text
+  - `bool` for boolean values (true/false)
+  - `List` for arrays
+  - `Map` for key-value pairs
+
+**Q4: How do you declare a string variable in Dart?**
+- **A4:** You declare a string variable in Dart as follows:
+  ```dart
+  String name = 'John Doe';
+  ```
+
+**Q5: What is the difference between `var`, `final`, and `const` in Dart?**
+- **A5:** 
+  - `var`: A variable that can be reassigned.
+  - `final`: A variable that can be set only once and cannot be reassigned.
+  - `const`: A compile-time constant that cannot be reassigned or changed.
+
+#### 3. Variables and Functions
+
+**Q6: How do you declare a variable in Dart?**
+- **A6:** You can declare a variable in Dart using `var`, `final`, or specifying the type, e.g.,
+  ```dart
+  var age = 25;
+  int height = 175;
+  ```
+
+**Q7: How do you define a function in Dart?**
+- **A7:** A function in Dart is defined using the following syntax:
+  ```dart
+  void greet() {
+    print('Hello, World!');
+  }
+  ```
+
+**Q8: What are optional parameters in Dart functions?**
+- **A8:** Optional parameters are parameters that are not required when calling a function. They can be positional or named. Named parameters are wrapped in `{}` and positional in `[]`.
+
+#### 4. Operators
+
+**Q9: What are operators in Dart?**
+- **A9:** Operators in Dart are symbols that perform operations on variables and values. They include arithmetic (`+`, `-`, `*`, `/`), comparison (`==`, `!=`, `>`, `<`), logical (`&&`, `||`, `!`), and assignment operators (`=`, `+=`, `-=`, etc.).
+
+**Q10: Give an example of using the ternary operator in Dart.**
+- **A10:** The ternary operator in Dart is used for a shorthand conditional expression:
+  ```dart
+  int a = 10;
+  int b = 20;
+  int min = a < b ? a : b;
+  ```
+
+#### 5. Decision Making and Loops
+
+**Q11: What are decision-making statements in Dart?**
+- **A11:** Decision-making statements allow the program to make choices and execute certain code based on conditions. Examples include `if`, `else`, `else if`, and `switch`.
+
+**Q12: How do you write a `for` loop in Dart?**
+- **A12:** A `for` loop in Dart is written as:
+  ```dart
+  for (int i = 0; i < 5; i++) {
+    print(i);
+  }
+  ```
+
+**Q13: How do you use a `while` loop in Dart?**
+- **A13:** A `while` loop continues to execute as long as the condition is true:
+  ```dart
+  int i = 0;
+  while (i < 5) {
+    print(i);
+    i++;
+  }
+  ```
+
+#### 6. Comments
+
+**Q14: What are comments in Dart and how do you write them?**
+- **A14:** Comments are non-executable lines in code used for documentation. Single-line comments start with `//` and multi-line comments are enclosed in `/* */`.
+
+#### 7. Continue and Break
+
+**Q15: What does the `continue` statement do in Dart?**
+- **A15:** The `continue` statement skips the current iteration of a loop and proceeds to the next iteration.
+
+**Q16: What does the `break` statement do in Dart?**
+- **A16:** The `break` statement exits the loop entirely, stopping further iterations.
+
+#### 8. Final and Const Keywords
+
+**Q17: What is the `final` keyword in Dart?**
+- **A17:** The `final` keyword is used to declare a variable that can be assigned only once and cannot be reassigned, but the value can be determined at runtime.
+
+**Q18: What is the `const` keyword in Dart?**
+- **A18:** The `const` keyword is used to declare compile-time constants. The value must be known at compile-time and cannot be changed.
+
+**Q19: Provide an example of using `final` and `const` in Dart.**
+- **A19:**
+  ```dart
+  final int age = 30;
+  const double pi = 3.14159;
+  ```
+
+**Q20: What is the difference between `final` and `const`?**
+- **A20:** 
+  - `final` variables can be set only once and their value is determined at runtime.
+  - `const` variables are compile-time constants, and their value must be known at compile-time.
+
+These questions and answers cover fundamental concepts in Dart programming, providing a comprehensive guide for a college exam viva on topics including data types, variables, functions, operators, decision-making, loops, comments, and keywords.
 
 
