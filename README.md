@@ -899,5 +899,62 @@ These questions and answers cover fundamental concepts in Dart programming, prov
 
 These questions cover the basics of Flutter, including its introduction, creating simple apps, understanding widgets, common UI elements, layout, handling user interaction, and essential tools for development. They provide a comprehensive guide for a college exam viva on Flutter development topics.
 
+### Viva Questions and Answers on Flutter Routing and SQLite Database
+
+#### 1. Navigation & Routing in Flutter
+
+**Q1: What is routing in Flutter?**
+- **A1:** Routing in Flutter refers to the process of navigating between different screens (or pages) within a Flutter application.
+
+**Q2: How do you navigate between screens in Flutter?**
+- **A2:** Navigation can be achieved using the `Navigator` widget and its methods like `push`, `pop`, and `pushReplacement`. Example:
+  ```dart
+  Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));
+  ```
+
+**Q3: What are named routes in Flutter?**
+- **A3:** Named routes are static mappings from route names to screen widgets. They allow for easier navigation management and are defined in `MaterialApp` using `routes` property.
+
+**Q4: How do you pass data between screens in Flutter?**
+- **A4:** Data can be passed using constructor parameters when navigating to a new screen or using `ModalRoute.of(context).settings.arguments` to retrieve data.
+
+#### 2. Flutter Packages
+
+**Q5: What are Flutter packages?**
+- **A5:** Flutter packages are pre-built libraries or modules that provide ready-to-use functionality to extend Flutter applications. They are published on pub.dev.
+
+**Q6: How do you add a package dependency to a Flutter project?**
+- **A6:** Add the package name and version to `pubspec.yaml` file under `dependencies`, then run `flutter pub get`.
+
+#### 3. Flutter Google Maps Integration
+
+**Q7: How do you integrate Google Maps in a Flutter app?**
+- **A7:** Use the `google_maps_flutter` package and obtain an API key from Google Cloud Console. Set up `GoogleMap` widget with API key and markers, polylines, etc., for interaction.
+
+#### 4. Working with SQLite Database
+
+**Q8: What is SQLite?**
+- **A8:** SQLite is a lightweight, embedded relational database management system (RDBMS) used in mobile and desktop applications for local data storage.
+
+#### Q5: What is SQLite and how is it used in Flutter?
+- **A5: SQLite is a lightweight, embedded relational database management system used for local data storage. In Flutter, SQLite is used via the sqflite package to create and manage local databases.
+
+#### Q6: How do you work with SQLite databases in Flutter?
+- **A6: Working with SQLite databases in Flutter involves the following steps:
+
+Import sqflite and path_provider packages in pubspec.yaml.
+Define database schema using CREATE TABLE SQL statements.
+Open database using openDatabase function.
+Perform CRUD operations (Create, Read, Update, Delete) using SQL commands (insert, update, delete, query).
+#### Q7: Explain the steps to create a SQLite database in Flutter.
+- **A7: To create a SQLite database in Flutter, follow these steps:
+
+Import sqflite and path_provider packages in pubspec.yaml.
+Define database schema using CREATE TABLE SQL statements.
+Open database using openDatabase function provided by sqflite.
+Perform database operations like insert, update, delete, and query using SQL commands within transactions.
+
+
+
 
 
