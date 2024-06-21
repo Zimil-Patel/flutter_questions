@@ -804,4 +804,100 @@ Dart is a versatile and powerful programming language optimized for building hig
 
 These questions and answers cover fundamental concepts in Dart programming, providing a comprehensive guide for a college exam viva on topics including data types, variables, functions, operators, decision-making, loops, comments, and keywords.
 
+### Viva Questions and Answers on Basics of Flutter
+
+#### 1. Introduction to Flutter
+
+**Q1: What is Flutter?**
+- **A1:** Flutter is an open-source UI software development kit (SDK) created by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.
+
+**Q2: What are the key features of Flutter?**
+- **A2:** Key features include:
+  - Hot reload for fast development
+  - Expressive and flexible UI with widgets
+  - Native performance on iOS and Android
+  - Extensive widget catalog
+  - Strong community and support
+
+#### 2. Hello World Flutter App
+
+**Q3: How do you create a simple "Hello, World!" app in Flutter?**
+- **A3:** Here's a basic example:
+  ```dart
+  import 'package:flutter/material.dart';
+
+  void main() {
+    runApp(
+      MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('Hello, World!'),
+          ),
+          body: Center(
+            child: Text('Hello, Flutter!'),
+          ),
+        ),
+      ),
+    );
+  }
+  ```
+
+#### 3. Widgets in Flutter
+
+**Q4: What are widgets in Flutter?**
+- **A4:** Widgets are the building blocks of Flutter apps, ranging from buttons and text to complex layouts. They are either stateful or stateless and describe what the UI should look like based on current configuration and state.
+
+**Q5: Explain the difference between stateful and stateless widgets in Flutter.**
+- **A5:**
+  - **Stateful Widget:** Maintains state that might change during the lifetime of the widget. Requires a `State` object that manages the lifecycle and changes.
+  - **Stateless Widget:** Does not maintain any state. Its build method is called once and never rebuilt. Examples include `Text`, `Icon`, and `Container`.
+
+#### 4. Common Widgets in Flutter
+
+**Q6: Describe the purpose of the following widgets in Flutter: `Column`, `Row`, `Container`, `Image`, `Icon`, `Button`, `Text`.**
+- **A6:**
+  - **`Column`:** Arranges widgets vertically.
+  - **`Row`:** Arranges widgets horizontally.
+  - **`Container`:** A versatile widget for styling, padding, and positioning child widgets.
+  - **`Image`:** Displays images from the network, assets, or memory.
+  - **`Icon`:** Represents a glyph from a font like Material Icons or custom fonts.
+  - **`Button`:** Provides interactive elements like `ElevatedButton`, `TextButton`, and `IconButton`.
+  - **`Text`:** Displays text with styling options like font size, color, and alignment.
+
+#### 5. Flutter Layout and Design
+
+**Q7: How do you align widgets in Flutter?**
+- **A7:** Widgets can be aligned using properties like `mainAxisAlignment` and `crossAxisAlignment` within `Row` and `Column` widgets, or using `alignment` property within `Container`.
+
+**Q8: What is `Padding` and `Margin` in Flutter?**
+- **A8:**
+  - **Padding:** Adds space inside the container’s boundaries.
+  - **Margin:** Adds space outside the container’s boundaries, affecting its position in the layout.
+
+#### 6. Building User Interfaces in Flutter
+
+**Q9: How do you handle user interaction in Flutter?**
+- **A9:** User interaction is handled using widgets like `GestureDetector` for taps and swipes, and by defining callback functions for buttons and other interactive widgets.
+
+**Q10: Explain the concept of `State` and `setState` in Flutter.**
+- **A10:**
+  - **State:** Represents the mutable state of a widget.
+  - **`setState`:** A method that informs Flutter that the state has changed and triggers a rebuild of the widget’s subtree.
+
+#### 7. Flutter Development Environment
+
+**Q11: What tools are necessary to develop Flutter applications?**
+- **A11:** You need:
+  - Flutter SDK
+  - IDE (like Android Studio, VS Code)
+  - Emulator or physical device
+
+**Q12: How does Flutter achieve platform adaptation for Android and iOS?**
+- **A12:** Flutter uses a single codebase with widgets that render to the platform’s native views, providing a native-like experience on both Android and iOS.
+
+### Conclusion
+
+These questions cover the basics of Flutter, including its introduction, creating simple apps, understanding widgets, common UI elements, layout, handling user interaction, and essential tools for development. They provide a comprehensive guide for a college exam viva on Flutter development topics.
+
+
 
