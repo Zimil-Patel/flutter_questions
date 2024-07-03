@@ -848,6 +848,8 @@ In Flutter, `Column` and `Row` are fundamental widgets used to arrange other wid
 
 ### Detailed Explanation of Row Widget
 
+![Screenshot 2024-07-03 at 9 04 09 PM](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/ee2d7b4d-f626-43f9-89db-a84e88676668)
+
 - The `Row` widget in Flutter is used to arrange its children widgets in a horizontal direction. 
 - It is a fundamental building block for creating horizontal layouts in Flutter applications.
 - The `Row` widget in Flutter is highly versatile and can be used in various scenarios to create horizontal layouts.
@@ -1205,6 +1207,9 @@ TextButton(
 ### Summary
 
 Buttons in Flutter are versatile and cater to various user interaction needs. The `ElevatedButton` is suitable for primary actions, providing a raised appearance to draw attention, while the `TextButton` is ideal for secondary actions, offering a simple and unobtrusive look. Understanding the different types of buttons and their appropriate usage helps in creating intuitive and user-friendly Flutter applications.
+
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/6764a55d-e277-4b9e-9d56-fe0ddf241080" height="580" width="280">
+
 
 # Q.16 Write A Short Note On TextField widget 
 # Q.17 Write A Short Note On Stack widget 
