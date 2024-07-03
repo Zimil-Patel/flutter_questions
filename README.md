@@ -90,7 +90,7 @@ choice for demanding mobile applications. As a result the number of targeted use
 
 # Q.3 Difference between Stateless Widget and Stateful Widget in Flutter
 
-| <div align = "center"> Statless Widget </div>| <div align = "center"> Stateful Widget </div> |
+| <div align = "center"> Point </div> | <div align = "center"> Statless Widget </div>| <div align = "center"> Stateful Widget </div> |
 | :-------------- | :-------------- | :-------------- |
 | Type |1. Static widgets |1. Dynamic Widgets |
 | Data change |2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
