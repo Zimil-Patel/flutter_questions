@@ -600,7 +600,98 @@ Dart is a versatile and powerful programming language optimized for building hig
 
 
 
-# Q.11 How To  Create Flutter First Application? Write A Steps 
+# Q.11 How To  Create Flutter First Application? Write A Steps
+
+Creating your first Flutter application involves several steps, from setting up the development environment to running the app on an emulator or real device. Below are the detailed steps to create a Flutter application:
+
+### Steps to Create Your First Flutter Application
+
+#### 1. **Set Up the Development Environment**
+
+1. **Install Flutter SDK**:
+   - Download the Flutter SDK from the official Flutter website: [Flutter SDK](https://flutter.dev/docs/get-started/install).
+   - Extract the downloaded file to a suitable location on your system.
+   - Add the `flutter/bin` directory to your system's PATH environment variable.
+
+2. **Install Android Studio**:
+   - Download and install Android Studio from the official website: [Android Studio](https://developer.android.com/studio).
+   - Open Android Studio and install the Flutter and Dart plugins:
+     - Go to `File` > `Settings` > `Plugins`.
+     - Search for `Flutter` and install it. This will also install the Dart plugin.
+
+3. **Set Up the Emulator**:
+   - Open Android Studio and go to `AVD Manager` to create a new virtual device (emulator).
+   - Follow the prompts to select a device and system image, then create and start the emulator.
+
+4. **Verify Installation**:
+   - Open a terminal and run the following command to verify your Flutter installation:
+     ```bash
+     flutter doctor
+     ```
+   - This command checks for any dependencies you need to complete the setup.
+
+#### 2. **Create a New Flutter Project**
+
+1. **Open Terminal/Command Prompt**:
+   - Navigate to the directory where you want to create your Flutter project.
+
+2. **Create the Project**:
+   - Run the following command to create a new Flutter project:
+     ```bash
+     flutter create my_first_app
+     ```
+   - This will generate a new Flutter project with the necessary files and directories.
+
+
+#### 3. **Open the Project in an IDE**
+
+1. **Open Android Studio**:
+   - You can use either Android Studio or Visual Studio Code for Flutter development. Both support Flutter and Dart plugins.
+
+2. **Open the Project**:
+   - In Android Studio: Click on `Open` and select the `my_first_app` directory.
+ 
+#### 4. **Write Your First Flutter Application**
+
+1. **Edit the Main Dart File**:
+   - Open the `lib/main.dart` file in your Flutter project.
+   - Replace the default code with the following simple Flutter application code:
+     ```dart
+     import 'package:flutter/material.dart';
+
+     void main() {
+       runApp(MyApp());
+     }
+
+     class MyApp extends StatelessWidget {
+       @override
+       Widget build(BuildContext context) {
+         return MaterialApp(
+           home: Scaffold(
+             appBar: AppBar(
+               title: Text('My First Flutter App'),
+             ),
+             body: Center(
+               child: Text('Hello, Flutter!'),
+             ),
+           ),
+         );
+       }
+     }
+     ```
+
+#### 5. **Run the Application**
+
+1. **Start the Emulator** (from AVD manager):
+2. **Run the Application** (by taping on run button):
+3. **View the Output** (on emulator check output):
+
+#### 6. **Hot Reload and Hot Restart**
+
+### Summary
+
+By following these steps, you have set up the Flutter development environment, created a new Flutter project, written a simple Flutter application, and run it on an emulator. You have also learned about hot reload and hot restart to speed up the development process. This foundational knowledge is crucial for further developing Flutter applications.
+
 # Q.12 What is Container? Explain In Details 
 # Q.13 What is Column, Row In Flutter? Explain Row Widget In Details 
 # Q.14 How To  Display Image In Flutter Describe In brief  
