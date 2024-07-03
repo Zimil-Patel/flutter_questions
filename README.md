@@ -597,8 +597,8 @@ Dart is a versatile and powerful programming language optimized for building hig
 # Q.13 What is Column, Row In Flutter? Explain Row Widget In Details 
 # Q.14 How To  Display Image In Flutter Describe In brief  
 # Q.15 What is Buttons In Flutter? Explain Any Two 
-# Q.16 Write A Shot Note On TextField widget 
-# Q.17 Write A Shot Note On Stack widget 
+# Q.16 Write A Short Note On TextField widget 
+# Q.17 Write A Short Note On Stack widget 
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
 # Q.19 Explain Cursors and Content Values In Details 
 # Q.20 How To  Create Flutter Google Maps? Describe In brief  
