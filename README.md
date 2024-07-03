@@ -1483,5 +1483,129 @@ The `Stack` widget is powerful for creating advanced layouts and designs in Flut
 
 
 # Q.20 How To  Create Flutter Google Maps? Describe In brief  
+
+- A map is used to get information about the world simply and visually. It presents the  world  places  by  showing  its  shape  and  sizes,  locations  and  distance  between them. 
+
+- We can add a map in our application with the use of the Google Maps Flutter plugin. 
+
+- This plugin can automatically access the Google Maps servers, map display, and respond to user gestures. It also allows us to add markers to our map.
+
+- Flutter developers prefer Google Maps for their application because they provide native performance for android and iOS both. It allows us to implement the code one  time  and  permit  them  to  run  the  code  for  both  devices  (android  and  iOS). 
+
+- Google  Maps  Flutter  plugin  is  provided  in  the  Google  Map  widget  that  supports initialCameraPosition, maptype and onMapCreated. 
+
+- We can set the position of the camera and marker in any place on the earth. We can design the marker according to our choice. 
+
+- It also comes with a zoom property in a cameraposition to provide the zooming in google map view on the initial page
+
+**Step 1**:  
+- Create a new project. Open this project in the IDE, navigate to the lib folder, and 
+then open the pubspec.yaml file for setting the map. 
+ 
+**Step 2**:  
+- In  pubspec.yaml  file,  we  need  to  add  the  Google  Maps  Flutter  plugin  in  the dependency section, which is available as google_maps_flutter on pub.dev.org.  After  adding  a  dependency,  click  on  the  get  package  link  to import the library in the main.dart file. 
+
+ ```yaml
+    dependencies:     
+      flutter:     
+        sdk: flutter     
+      cupertino_icons: ^0.1.2     
+      google_maps_flutter: ^0.5.21   
+ ```
+ 
+**Step 3**:  
+- The  next  step  is  to  get  an  API  key  for  your  project.  If  we  are  using  an  Android platform, then follow the instructions given on Maps SDK for Android: Get API Key. 
+- After creating the API key, add it to the application manifest file. 
+- We can find this file by navigating to android/app/src/main/AndroidManifest.xml as follows: 
+ 
+```xml
+<manifest ...   
+  <application ...   
+    <meta-data android:name="com.google.android.geo.API_KEY"   
+               android:value="YOUR ANDROID API KEY HERE"/>
+```
+
+**Step 4**: Next, import the package in the dart file as below: 
+
+```dart
+import 'package:google_maps_flutter/google_maps_flutter.dart';   
+```
+
+**Step 5**: Now, we are ready to add a GoogleMap widget to start creating a UI to display the map. 
+ 
+ ```dart
+import 'package:flutter/material.dart';   
+import 'package:google_maps_flutter/google_maps_flutter.dart';   
+   
+void main() => runApp(MyApp());   
+   
+class MyApp extends StatefulWidget {   
+  @override   
+  _MyAppState createState() => _MyAppState();   
+}   
+   
+class _MyAppState extends State<MyApp> {   
+ 
+ 
+  GoogleMapController myController;   
+   
+  final LatLng _center = const LatLng(45.521563, -122.677433);   
+   
+  void _onMapCreated(GoogleMapController controller) {   
+    myController = controller;   
+  }   
+   
+  @override   
+  Widget build(BuildContext context) {   
+    return MaterialApp(   
+      home: Scaffold(   
+        appBar: AppBar(   
+          title: Text('Flutter Maps Demo'),   
+          backgroundColor: Colors.green,   
+        ),   
+        body: Stack(   
+          children: <Widget>[   
+            GoogleMap(   
+              onMapCreated: _onMapCreated,   
+              initialCameraPosition: CameraPosition(   
+                target: _center,   
+                zoom: 10.0,   
+              ),   
+            ),   
+            Padding(   
+              padding: const EdgeInsets.all(14.0),   
+              child: Align(   
+                alignment: Alignment.topRight,   
+                child: FloatingActionButton(   
+                  onPressed: () => print('You have pressed the button'),   
+                  materialTapTargetSize: MaterialTapTargetSize.padded,   
+                  backgroundColor: Colors.green,   
+                  child: const Icon(Icons.map, size: 30.0),   
+                ),   
+              ),   
+            ),   
+          ],   
+        ),   
+      ),   
+    );   
+  }   
+}   
+```
+ 
+ 
+In the above code, we have noticed these terms: 
+ 
+- **mapController**: It is similar to other controllers that we had seen in Flutter. It controls all 
+activities on the GoogleMap class. Here, it manages the camera function, such as position, 
+animation, zooming, etc. 
+ 
+- **onMapCreated**: It is a method called for creating a map and takes a MapController as an 
+argument. 
+ 
+- **initialCameraPosition**: It is a required parameter that sets the camera position from where 
+we want to start. It allows us to set which part of the world we want to point on the map. 
+ 
+- **stack**: It is used to place other Flutter widgets on top of the map widget
+
 # Q.21 Describe the Telephony and SMS In Flutter 
 # Q.22 Describe the Flutter Comments In Details
