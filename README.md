@@ -1607,5 +1607,133 @@ we want to start. It allows us to set which part of the world we want to point o
  
 - **stack**: It is used to place other Flutter widgets on top of the map widget
 
-# Q.21 Describe the Telephony and SMS In Flutter 
+# Q.21 Describe the Telephony and SMS In Flutter
+
+#### Telephony and SMS 
+ 
+- A Flutter plugin fork from telephony to use telephony features such as fetch network info, 
+start phone calls, send and receive SMS, and fixed for listen for incoming SMS. 
+ 
+- **Initial Setup **
+
+### First we need to add the telephony dependency in the pubspec.yaml file. 
+ 
+``` yaml
+dependencies: 
+  flutter: 
+    sdk: flutter 
+  url_launcher:  #latest_version 
+  flutter_phone_direct_caller: #latest_version 
+```
+
+### Move To Main.dart For Navigate 
+
+```dart 
+import 'package:call_sms/CallSms.dart'; 
+import 'package:flutter/material.dart'; 
+ 
+void main(){ 
+  runApp(MaterialApp( 
+   debugShowCheckedModeBanner: false, 
+   title: 'CallSmS', 
+   home: CallSms(), 
+  )); 
+} 
+```
+
+### Configuration for CallSms.dart 
+ 
+```dart
+import 'package:flutter/material.dart'; 
+//import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart'; 
+import 'package:url_launcher/url_launcher.dart'; 
+ 
+class CallSms extends StatefulWidget { 
+  const CallSms({super.key}); 
+ 
+  @override 
+  State<CallSms> createState() => _CallSmsState(); 
+} 
+ 
+Uri calldailer=Uri(scheme: 'tel',path: '9727238157'); 
+ 
+ 
+CallS()async{ 
+  await launchUrl(calldailer); 
+} 
+  
+//directcall()async{ 
+ //await FlutterPhoneDirectCaller.callNumber('9727238157'); 
+//}  
+ 
+ 
+class _CallSmsState extends State<CallSms> { 
+  @override 
+  Widget build(BuildContext context) { 
+    return Container( 
+      child: Scaffold( 
+        body: Stack( 
+          children: [ 
+            Center(child: ElevatedButton(child: Text('CALL'),onPressed: CallS,)) 
+          ], 
+        ), 
+      ), 
+    ); 
+  } 
+}
+```
+
+
 # Q.22 Describe the Flutter Comments In Details
+
+
+In Flutter, comments are essential for documenting code, making it easier to understand and maintain. Flutter supports both single-line and multi-line comments, similar to other programming languages like Dart, which is the language used in Flutter development.
+
+### Single-line Comments
+Single-line comments are used to add brief explanations or notes about the code. They start with `//`.
+
+Example:
+```dart
+// This is a single-line comment
+int counter = 0; // Initialize counter variable
+```
+
+### Multi-line Comments
+Multi-line comments are used for longer explanations that span multiple lines. They start with `/*` and end with `*/`.
+
+Example:
+```dart
+/*
+  This is a multi-line comment.
+  It can span multiple lines.
+*/
+int counter = 0; /* Initialize counter variable */
+```
+
+### Documentation Comments
+Documentation comments are a special type of multi-line comments used for generating documentation. They start with `///` and are placed before declarations such as classes, methods, or variables. These comments can be parsed by documentation tools to generate API documentation.
+
+Example:
+```dart
+/// This is a documentation comment.
+/// It describes the `Counter` class.
+class Counter {
+  int _count = 0;
+
+  /// Increments the counter by 1.
+  void increment() {
+    _count++;
+  }
+
+  /// Returns the current count.
+  int get count => _count;
+}
+```
+
+### Best Practices
+- **Be Clear and Concise**: Write comments that are easy to understand and to the point.
+- **Keep Comments Up-to-date**: Ensure comments reflect the current state of the code.
+- **Explain the Why, Not the What**: Focus on explaining why a piece of code exists or why certain decisions were made, rather than just describing what the code does.
+- **Use Documentation Comments for Public APIs**: For public methods and classes, use documentation comments to provide detailed information about their usage.
+
+By following these practices, you can make your Flutter code more maintainable and easier to understand for others (or yourself in the future).
