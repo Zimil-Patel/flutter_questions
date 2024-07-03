@@ -1408,6 +1408,42 @@ In this example:
 The `Stack` widget is powerful for creating advanced layouts and designs in Flutter, giving you flexibility to position and layer widgets in a variety of ways.
 
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
+
+### What is SQLite Database?  
+
+- Android SQLite Database is an open-source database provided in Android that is used to store data inside the user’s device in the form of a Text file. 
+
+- We can perform many operations on this data such as adding new data, updating, reading, and deleting this data. 
+
+- SQLite is an offline database that is locally stored in the user’s device and we do not have to create any connection to connect to this database.   
+ 
+### here are several reasons why you might choose to use SQLite in your project: 
+ 
+1. **Ease of use**:  
+- SQLite is very easy to get started with, as it requires no setup or configuration. 
+- You can simply include the library in your project and start using it. 
+
+2. **Embeddability**:  
+- SQLite is designed to be embedded into other applications. 
+- It is a self-contained, serverless  database  engine,  which  means  you  can  include  it  in  your  application without the need for a separate database server. 
+
+3. **Lightweight**:  
+- SQLite is a very lightweight database  engine, with a small library size  (typically less than 1MB). 
+- This makes it well-suited for use in applications where the database is embedded directly into the application binary, such as mobile apps. 
+
+4. **Serverless**:  
+- As mentioned earlier, SQLite is a serverless database engine, which means there is no need to set up and maintain a separate database server process. This  makes it easy to deploy and manage, as there are no additional dependencies to worry about. 
+
+5. **Cross-platform**:  
+- SQLite  is  available  on  many  platforms,  including  Linux,  macOS,  and  Windows, making it a good choice for cross-platform development. 
+ 
+ 
+6. **Standalone**:  
+- SQLite stores all of the data in a single file on the filesystem, which makes it easy to copy or backup the database. 
+
+7. **High reliability**:  
+- SQLite has been widely tested and used in production systems for many years, and has a reputation for being a reliable and robust database engine.
+
 # Q.19 Explain Cursors and Content Values In Details 
 # Q.20 How To  Create Flutter Google Maps? Describe In brief  
 # Q.21 Describe the Telephony and SMS In Flutter 
