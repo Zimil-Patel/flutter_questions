@@ -1313,6 +1313,8 @@ In this example:
 
 The `TextField` widget is essential for creating interactive and user-friendly applications in Flutter, offering flexibility and a wide range of customization options.
 
+![textfield](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/eed69e3f-4dd2-4685-a18f-dca7aa48faf3)
+
 # Q.17 Write A Short Note On Stack widget 
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
 # Q.19 Explain Cursors and Content Values In Details 
