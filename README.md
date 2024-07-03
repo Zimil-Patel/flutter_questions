@@ -91,15 +91,15 @@ choice for demanding mobile applications. As a result the number of targeted use
 # Q.3 Difference between Stateless Widget and Stateful Widget in Flutter
 
 | <div align = "center"> Statless Widget </div>| <div align = "center"> Stateful Widget </div> |
-| :-------------- | :-------------- |
-|1. Static widgets |1. Dynamic Widgets |
-|2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
-|3. They do not store any state information. |3. They store state information object to update widget on user interaction |
-|4. They will be rendered once and will not update themselves | 4. They can re-render if the input data changes or if Widget’s state changes. |
-|5. Loads in memory once statically | 5. Loads in memory dynamically |
-|6. Faster than stateful becase they stay consistent(immutable) |6. Slower compare to Stateless(mutable) |
-|7. method: build() |7. methods: build(), createState(), initState(), didUpdateWidget(), setState(), dispose(), etc... |
-|8. For Example, Text, Icon, and RaisedButton are Stateless Widgets.  |8. For Example Checkbox, Radio Button, and Slider are Stateful Widgets |
+| :-------------- | :-------------- | :-------------- |
+| Type |1. Static widgets |1. Dynamic Widgets |
+| Data change |2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
+| Store info |3. They do not store any state information. |3. They store state information object to update widget on user interaction |
+| Render |4. They will be rendered once and will not update themselves | 4. They can re-render if the input data changes or if Widget’s state changes. |
+| Memory |5. Loads in memory once statically | 5. Loads in memory dynamically |
+| Performace |6. Faster than stateful becase they stay consistent(immutable) |6. Slower compare to Stateless(mutable) |
+| Methods |7. method: build() |7. methods: build(), createState(), initState(), didUpdateWidget(), setState(), dispose(), etc... |
+| Example |8. For Example, Text, Icon, and RaisedButton are Stateless Widgets.  |8. For Example Checkbox, Radio Button, and Slider are Stateful Widgets |
 
 # Q.4 Explain Flutter File Structure
 
