@@ -694,10 +694,6 @@ By following these steps, you have set up the Flutter development environment, c
 
 # Q.12 What is Container? Explain In Details
 
-Yes, the detailed explanation provided is comprehensive and well-suited for a 6-mark college exam question on the `Container` widget in Flutter. Here’s a condensed version focusing on the essential points, ensuring clarity and relevance for an exam setting:
-
----
-
 ### Container in Flutter
 
 A `Container` in Flutter is a versatile widget used for creating rectangular visual elements with extensive customization options. It is primarily used for layout and styling purposes.
@@ -769,27 +765,17 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            width: 200.0,
-            height: 200.0,
+            height: 200,
+            width: 200,
             alignment: Alignment.center,
-            padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.blue,
-              border: Border.all(color: Colors.black, width: 2.0),
-              borderRadius: BorderRadius.circular(10.0),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey,
-                  blurRadius: 10.0,
-                  offset: Offset(2.0, 2.0),
-                ),
-              ],
+              color: Colors.grey,
+              border: Border.all(width: 2, color: Colors.black,),
+              borderRadius: BorderRadius.circular(10),
             ),
-            child: Text(
-              'Hello, Flutter!',
-              style: TextStyle(color: Colors.white, fontSize: 20.0),
-            ),
+            child: const Text('Hello world!'),
           ),
         ),
       ),
@@ -803,10 +789,7 @@ class MyApp extends StatelessWidget {
 The `Container` widget in Flutter is powerful for designing and structuring the UI, offering various properties for layout and styling. Mastery of the `Container` widget allows developers to create visually appealing and well-structured applications.
 
 ---
-
-This version maintains the key points while being concise and clear, making it suitable for a college exam answer.
-
-
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/b4fd96fc-e27f-4de4-8f9b-a22d694d5455" height="600" width="400">
 
 # Q.13 What is Column, Row In Flutter? Explain Row Widget In Details 
 # Q.14 How To  Display Image In Flutter Describe In brief  
