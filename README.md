@@ -1339,7 +1339,7 @@ The `Stack` widget in Flutter allows you to overlay multiple widgets on top of e
  
 - **alignment**: It determines how the children widgets are positioned in the stack. It can be top, bottom, center, center-right, etc. 
 - **textDirection**: It determines the text direction. It can draw the text either ltr (left to right) or rtl (right to the left). 
-- fit**: It will control the size of non-positioned children widgets in the stack. 
+- **fit**: It will control the size of non-positioned children widgets in the stack. 
   - It has three types: loose, expand andpassthrough. 
     - The loose used to set the child widget small, 
     - The expand attribute  makes  the  child  widget  as  large  as  possible
@@ -1400,9 +1400,6 @@ class MyApp extends StatelessWidget {
 
 In this example:
 - A `Stack` is used to overlay three `Container` widgets.
-- The base blue `Container` is the first child, forming the bottom layer.
-- The red `Container` is positioned 50 pixels from the top and left of the stack.
-- The green `Container` is positioned 10 pixels from the bottom and right of the stack.
 
 #### Practical Uses:
 - **Complex Layouts**: Creating intricate designs such as overlapping widgets, floating action buttons over images, or placing text over a background image.
