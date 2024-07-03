@@ -696,27 +696,25 @@ By following these steps, you have set up the Flutter development environment, c
 
 ### Container in Flutter
 
-- A `Container` in Flutter is a versatile widget used for creating rectangular visual elements with extensive customization options. 
+### Container
 
-- It is primarily used for layout and styling purposes.
+- The  container  in  Flutter  is  a  parent  widget  that  can  contain  multiple  child  widgets  and manage  them  efficiently  through  width,  height,  padding,  background  color,  etc.
 
-- The `Container` widget in Flutter is powerful for designing and structuring the UI, offering various properties for layout and styling. 
+- It  is  a widget that combines common painting, positioning, and sizing of the child widgets. 
 
-- Mastery of the `Container` widget allows developers to create visually appealing and well-structured applications.
+- It is also a class to store one or more widgets and position them on the screen according to our needs. 
 
-Certainly! When writing about the `Container` widget in a theoretical context, you can include key points that highlight its purpose, features, and usage in Flutter. Here are some theoretical points you can include in your exam answer:
+- Generally, it is similar to a box for storing contents. It allows many attributes to the user for decorating its child widgets such as using margin, which separates the container with other contents. 
 
-### **Purpose**:
-   - The `Container` widget is designed to combine common painting, positioning, and sizing widgets.
-   - It serves as a versatile building block for creating rectangular visual elements in the Flutter UI.
+### Why we need a container widget in Flutter?
 
-### **Usage**:
-   - Commonly used for layout and styling, making it a fundamental part of the UI design.
-   - Can nest multiple `Container` widgets to achieve complex layouts.
+- If  we  have  a  widget  that  needs  some  background  styling  may  be  a  color,  shape,  or  size 
+constraints, we may try to wrap it in a container widget.
 
-### **Flexibility**:
-   - Can contain a single child widget, making it a simple yet powerful widget for composition.
-   - When combined with other layout widgets, such as `Row`, `Column`, `Stack`, etc., it provides a robust mechanism for creating responsive and adaptive UI designs.
+- This widget helps us to compose, decorate, and position its child widgets. 
+
+- If we wrap our widgets in a container, then without using any parameters, we would not notice any difference in its appearance But if we add any properties such as color, margin, padding, etc. in a container, we can style our widgets 
+on the screen according to our needs.
 
 ### **Example Scenarios**:
    - **Styling**
@@ -1140,6 +1138,14 @@ Displaying images in Flutter is simple and flexible. The `Image` widget supports
 
 - Buttons are typically styled and customized to match the overall theme of the application.
 
+- Buttons are the graphical control element that provides a user to trigger an event such as taking  actions,  making  choices,  searching  things,  and  many  more.  
+
+- They  can  be  placed anywhere in our UI like dialogs, forms, cards, toolbars, etc. 
+ 
+- Buttons  are  the  Flutter  widgets,  which  is  a  part  of  the  material  design  library.
+
+- Flutter provides several types of buttons that have different shapes, styles, and features. 
+
 ### Types of Buttons in Flutter
 
 1. **TextButton**
@@ -1151,6 +1157,9 @@ Displaying images in Flutter is simple and flexible. The `Image` widget supports
 7. **PopupMenuButton**
 8. **BackButton**
 9. **CloseButton**
+10. **InkWell**
+11. **FlatButton**
+12. **RaisedButton**
 
 ### Explanation of Two Button Types
 
