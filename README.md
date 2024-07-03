@@ -1216,6 +1216,103 @@ Buttons in Flutter are versatile and cater to various user interaction needs. Th
 
 
 # Q.16 Write A Short Note On TextField widget 
+
+### TextField Widget in Flutter
+
+- A TextField or TextBox is an input element which holds the alphanumeric data, such as name, password, address, etc. 
+- It is a GUI control element that enables the user to enter text information using a programmable code. 
+- It can be of a single-line text field (when only one line of information is required) or multiple-line text field (when more than one line of information is required).
+
+- TextField in Flutter is the most commonly used text input widget that allows users to collect inputs from the keyboard into an app. We can use the TextField widget in building forms, sending messages, creating search experiences, and many more. 
+- By default, Flutter decorated the TextField with an underline. 
+- We can also add several attributes with TextField, such as label, icon, inline hint text, and error text using an InputDecoration as the decoration. If we want to remove the decoration properties entirely, it is required to set the decoration to null.
+
+
+- The `TextField` widget in Flutter is a fundamental widget used to receive text input from the user. It is a versatile widget, commonly used in forms and user input fields.
+
+#### Key Features:
+- **Input Customization**: You can customize the appearance and behavior of the `TextField` through various properties, such as `decoration`, `style`, `textAlign`, and more.
+- **Controllers**: A `TextEditingController` can be used to manage and listen to text input, enabling you to retrieve the current text value and listen for changes.
+- **Validation**: You can validate user input using the `TextField`'s `onChanged` or `onSubmitted` callbacks, or by incorporating it into a `Form` widget with validation logic.
+- **Input Types**: The `keyboardType` property allows you to specify different keyboard configurations, such as text, number, email, etc.
+- **Focus Management**: The `FocusNode` can be used to manage the focus state, enabling actions like focusing, unfocusing, and responding to focus changes.
+
+#### Example Usage:
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+
+class MyApp extends StatelessWidget {
+  @override
+
+
+  final my_controller = TextEditingController();
+
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter Row Example'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: TextField(
+
+                  controller: my_controller,
+                  obscureText: false,
+
+                  onTapOutside: (event){
+                    FocusManager.instance.primaryFocus!.unfocus();
+                  },
+
+                  decoration: const InputDecoration(
+                    hintText: 'Enter Text',
+                    labelText: 'Enter Text',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  print(my_controller.text);
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue, // Background color
+                  foregroundColor: Colors.white, // Text color
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  elevation: 5, // Elevation
+                ),
+                child: const Text('Submit'),
+              ),
+
+            ],
+          ),
+        )
+      ),
+    );
+  }
+}
+```
+
+In this example:
+- A `TextField` is used with a `TextEditingController` to capture and manage user input.
+- The `InputDecoration` is used to style the `TextField` with a label and border.
+- An `ElevatedButton` prints the text from the `TextField` when pressed.
+
+The `TextField` widget is essential for creating interactive and user-friendly applications in Flutter, offering flexibility and a wide range of customization options.
+
 # Q.17 Write A Short Note On Stack widget 
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
 # Q.19 Explain Cursors and Content Values In Details 
