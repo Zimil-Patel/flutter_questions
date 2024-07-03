@@ -848,7 +848,18 @@ In Flutter, `Column` and `Row` are fundamental widgets used to arrange other wid
 
 ### Detailed Explanation of Row Widget
 
-The `Row` widget in Flutter is used to arrange its children widgets in a horizontal direction. It is a fundamental building block for creating horizontal layouts in Flutter applications.
+- The `Row` widget in Flutter is used to arrange its children widgets in a horizontal direction. 
+- It is a fundamental building block for creating horizontal layouts in Flutter applications.
+- The `Row` widget in Flutter is highly versatile and can be used in various scenarios to create horizontal layouts.
+
+### UseCases
+
+
+### 1. Horizontal Menu
+### 2. Displaying Multiple Icons or Images
+### 3. Form Fields in a Single Row
+### 4. Horizontal List of Cards or Items
+
 
 #### Key Properties of Row
 
@@ -995,6 +1006,125 @@ class MyApp extends StatelessWidget {
 - **Children**: Three `Container` widgets are used as children of the `Row`, each with different background colors and text.
 
 # Q.14 How To  Display Image In Flutter Describe In brief  
+
+### How to Display Images in Flutter
+
+Displaying images in Flutter is straightforward and can be done using several built-in widgets. Here’s a brief description suitable for a college exam answer:
+
+### 1. Using the `Image` Widget
+
+The `Image` widget is the primary widget for displaying images in Flutter. It supports various sources such as assets, network, file, and memory.
+
+#### a. Displaying an Image from Assets
+
+To display an image from the local assets, follow these steps:
+
+1. **Add Image to Assets**:
+   - Place your image file in the `assets` directory of your Flutter project.
+   - Update the `pubspec.yaml` file to include the asset:
+     ```yaml
+     flutter:
+       assets:
+         - assets/images/example.png
+     ```
+
+2. **Use the `Image.asset` Constructor**:
+   ```dart
+   Image.asset('assets/images/example.png')
+   ```
+
+#### b. Displaying an Image from the Network
+
+To display an image from a URL, use the `Image.network` constructor:
+
+```dart
+Image.network('https://example.com/image.png')
+```
+
+#### c. Displaying an Image from a File
+
+To display an image from the local file system, use the `Image.file` constructor:
+
+```dart
+import 'dart:io';
+
+Image.file(File('/path/to/your/image.png'))
+```
+
+#### d. Displaying an Image from Memory
+
+To display an image from memory (e.g., a `Uint8List`), use the `Image.memory` constructor:
+
+```dart
+import 'dart:typed_data';
+
+Image.memory(Uint8List.fromList(yourImageData))
+```
+
+### Example Code for Each Source
+
+Here’s a complete example demonstrating how to display images from different sources:
+
+```dart
+import 'package:flutter/material.dart';
+import 'dart:io';
+import 'dart:typed_data';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Display Images in Flutter'),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            // Image from assets
+            Image.asset('assets/images/example.png'),
+
+            // Image from network
+            Image.network('https://example.com/image.png'),
+
+            // Image from file
+            Image.file(File('/path/to/your/image.png')),
+
+            // Image from memory (replace yourImageData with actual data)
+            Image.memory(Uint8List.fromList([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+### Key Properties of the `Image` Widget
+
+- **width and height**: Specify the dimensions of the image.
+  ```dart
+  Image.asset('assets/images/example.png', width: 100, height: 100)
+  ```
+
+- **fit**: Determines how the image should be inscribed into the box. Options include `BoxFit.fill`, `BoxFit.contain`, `BoxFit.cover`, `BoxFit.fitWidth`, `BoxFit.fitHeight`, `BoxFit.none`, and `BoxFit.scaleDown`.
+  ```dart
+  Image.asset('assets/images/example.png', fit: BoxFit.cover)
+  ```
+
+- **alignment**: Aligns the image within its container.
+  ```dart
+  Image.asset('assets/images/example.png', alignment: Alignment.center)
+  ```
+
+### Summary
+
+Displaying images in Flutter is simple and flexible. The `Image` widget supports various sources, including assets, network, file, and memory. By using the appropriate constructor and configuring properties like width, height, fit, and alignment, you can efficiently display images in your Flutter applications. This fundamental knowledge is crucial for creating visually rich and interactive mobile applications.
+
 # Q.15 What is Buttons In Flutter? Explain Any Two 
 # Q.16 Write A Short Note On TextField widget 
 # Q.17 Write A Short Note On Stack widget 
