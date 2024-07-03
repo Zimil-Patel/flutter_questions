@@ -789,7 +789,7 @@ class MyApp extends StatelessWidget {
 The `Container` widget in Flutter is powerful for designing and structuring the UI, offering various properties for layout and styling. Mastery of the `Container` widget allows developers to create visually appealing and well-structured applications.
 
 ---
-<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/b4fd96fc-e27f-4de4-8f9b-a22d694d5455" height="600" width="400">
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/b4fd96fc-e27f-4de4-8f9b-a22d694d5455" height="580" width="280">
 
 # Q.13 What is Column, Row In Flutter? Explain Row Widget In Details 
 # Q.14 How To  Display Image In Flutter Describe In brief  
