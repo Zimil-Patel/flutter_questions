@@ -1325,6 +1325,91 @@ The `TextField` widget is essential for creating interactive and user-friendly a
 ![textfield](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/eed69e3f-4dd2-4685-a18f-dca7aa48faf3)
 
 # Q.17 Write A Short Note On Stack widget 
+
+### Stack Widget in Flutter
+
+The `Stack` widget in Flutter allows you to overlay multiple widgets on top of each other. This is useful when you want to position widgets relative to each other, especially for creating complex UI layouts.
+
+#### Key Features:
+- **Overlaying Widgets**: Widgets are stacked on top of each other, with the first child being the bottommost layer and the last child being the topmost layer.
+- **Positioning**: You can use the `Positioned` widget to position children relative to the stack's boundaries, allowing for precise control over their placement.
+- **Alignment**: The `alignment` property can be used to control how children without a `Positioned` widget are aligned within the stack.
+
+### roperties of the Stack Widget :
+ 
+- **alignment**: It determines how the children widgets are positioned in the stack. It can be top, bottom, center, center-right, etc. 
+- **textDirection**: It determines the text direction. It can draw the text either ltr (left to right) or rtl (right to the left). 
+- fit**: It will control the size of non-positioned children widgets in the stack. 
+  - It has three types: loose, expand andpassthrough. 
+    - The loose used to set the child widget small, 
+    - The expand attribute  makes  the  child  widget  as  large  as  possible
+    - the  passthrough  set  the  child widget depending on its parent widget. 
+- **overflow**:  It  controls  the  children  widgets,  whether  visible  or  clipped,  when  it's  content 
+overflowing outside the stack. 
+- **clipBehavior**: It determines whether the content will be clipped or not. 
+
+#### Example Usage:
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Stack Widget Example'),
+        ),
+        body: Center(
+          child: Stack(
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.blue,
+              ),
+              Positioned(
+                top: 50,
+                left: 50,
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.red,
+                ),
+              ),
+              Positioned(
+                bottom: 10,
+                right: 10,
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+In this example:
+- A `Stack` is used to overlay three `Container` widgets.
+- The base blue `Container` is the first child, forming the bottom layer.
+- The red `Container` is positioned 50 pixels from the top and left of the stack.
+- The green `Container` is positioned 10 pixels from the bottom and right of the stack.
+
+#### Practical Uses:
+- **Complex Layouts**: Creating intricate designs such as overlapping widgets, floating action buttons over images, or placing text over a background image.
+- **Custom UI Elements**: Building custom widgets like badges, tooltips, and layered animations.
+
+The `Stack` widget is powerful for creating advanced layouts and designs in Flutter, giving you flexibility to position and layer widgets in a variety of ways.
+
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
 # Q.19 Explain Cursors and Content Values In Details 
 # Q.20 How To  Create Flutter Google Maps? Describe In brief  
