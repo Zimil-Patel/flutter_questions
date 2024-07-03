@@ -1005,6 +1005,9 @@ class MyApp extends StatelessWidget {
 - **Cross Axis Alignment**: The `crossAxisAlignment` property is set to `CrossAxisAlignment.center`, which aligns the children in the center vertically.
 - **Children**: Three `Container` widgets are used as children of the `Row`, each with different background colors and text.
 
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/f928cfc5-352a-4800-8c87-7bb71abec787" height="580" width="280">
+
+
 # Q.14 How To  Display Image In Flutter Describe In brief  
 
 ### How to Display Images in Flutter
