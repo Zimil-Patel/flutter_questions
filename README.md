@@ -812,7 +812,188 @@ class MyApp extends StatelessWidget {
 
 <img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/b4fd96fc-e27f-4de4-8f9b-a22d694d5455" height="580" width="280">
 
-# Q.13 What is Column, Row In Flutter? Explain Row Widget In Details 
+# Q.13 What is Column, Row In Flutter? Explain Row Widget In Details
+
+### Column and Row in Flutter
+
+In Flutter, `Column` and `Row` are fundamental widgets used to arrange other widgets in a vertical and horizontal direction, respectively. These layout widgets are essential for creating structured and responsive user interfaces.
+
+#### Column
+- The `Column` widget arranges its children vertically.
+- Each child is placed below the previous one.
+- Example:
+  ```dart
+  Column(
+    children: <Widget>[
+      Text('Item 1'),
+      Text('Item 2'),
+      Text('Item 3'),
+    ],
+  )
+  ```
+
+#### Row
+- The `Row` widget arranges its children horizontally.
+- Each child is placed next to the previous one.
+- Example:
+  ```dart
+  Row(
+    children: <Widget>[
+      Text('Item 1'),
+      Text('Item 2'),
+      Text('Item 3'),
+    ],
+  )
+  ```
+
+### Detailed Explanation of Row Widget
+
+The `Row` widget in Flutter is used to arrange its children widgets in a horizontal direction. It is a fundamental building block for creating horizontal layouts in Flutter applications.
+
+#### Key Properties of Row
+
+1. **children**:
+   - A list of widgets to display horizontally.
+   - Example:
+     ```dart
+     Row(
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+2. **mainAxisAlignment**:
+   - Controls how the children are aligned horizontally (along the main axis).
+   - Options include `MainAxisAlignment.start`, `MainAxisAlignment.center`, `MainAxisAlignment.end`, `MainAxisAlignment.spaceBetween`, `MainAxisAlignment.spaceAround`, and `MainAxisAlignment.spaceEvenly`.
+   - Example:
+     ```dart
+     Row(
+       mainAxisAlignment: MainAxisAlignment.center,
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+3. **crossAxisAlignment**:
+   - Controls how the children are aligned vertically (along the cross axis).
+   - Options include `CrossAxisAlignment.start`, `CrossAxisAlignment.center`, `CrossAxisAlignment.end`, `CrossAxisAlignment.stretch`, and `CrossAxisAlignment.baseline`.
+   - Example:
+     ```dart
+     Row(
+       crossAxisAlignment: CrossAxisAlignment.start,
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+4. **mainAxisSize**:
+   - Controls how much space the Row should take along the main axis.
+   - Options include `MainAxisSize.max` (default) and `MainAxisSize.min`.
+   - Example:
+     ```dart
+     Row(
+       mainAxisSize: MainAxisSize.min,
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+5. **textDirection**:
+   - Determines the text direction for the row’s children (left-to-right or right-to-left).
+   - Options include `TextDirection.ltr` and `TextDirection.rtl`.
+   - Example:
+     ```dart
+     Row(
+       textDirection: TextDirection.rtl,
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+6. **verticalDirection**:
+   - Determines the vertical order of the children.
+   - Options include `VerticalDirection.up` and `VerticalDirection.down`.
+   - Example:
+     ```dart
+     Row(
+       verticalDirection: VerticalDirection.up,
+       children: <Widget>[
+         Text('Item 1'),
+         Text('Item 2'),
+         Text('Item 3'),
+       ],
+     )
+     ```
+
+#### Example Usage
+
+Here’s a complete example that demonstrates the use of the `Row` widget with various properties:
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter Row Example'),
+        ),
+        body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                color: Colors.red,
+                padding: EdgeInsets.all(10.0),
+                child: Text('Item 1', style: TextStyle(color: Colors.white)),
+              ),
+              Container(
+                color: Colors.green,
+                padding: EdgeInsets.all(10.0),
+                child: Text('Item 2', style: TextStyle(color: Colors.white)),
+              ),
+              Container(
+                color: Colors.blue,
+                padding: EdgeInsets.all(10.0),
+                child: Text('Item 3', style: TextStyle(color: Colors.white)),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+#### Explanation of the Example
+
+- **Main Axis Alignment**: The `mainAxisAlignment` property is set to `MainAxisAlignment.spaceAround`, which places equal space around each child widget.
+- **Cross Axis Alignment**: The `crossAxisAlignment` property is set to `CrossAxisAlignment.center`, which aligns the children in the center vertically.
+- **Children**: Three `Container` widgets are used as children of the `Row`, each with different background colors and text.
+
 # Q.14 How To  Display Image In Flutter Describe In brief  
 # Q.15 What is Buttons In Flutter? Explain Any Two 
 # Q.16 Write A Short Note On TextField widget 
