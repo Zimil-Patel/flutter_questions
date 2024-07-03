@@ -1129,6 +1129,83 @@ class MyApp extends StatelessWidget {
 Displaying images in Flutter is simple and flexible. The `Image` widget supports various sources, including assets, network, file, and memory. By using the appropriate constructor and configuring properties like width, height, fit, and alignment, you can efficiently display images in your Flutter applications. This fundamental knowledge is crucial for creating visually rich and interactive mobile applications.
 
 # Q.15 What is Buttons In Flutter? Explain Any Two 
+
+### Buttons in Flutter
+
+Buttons are essential UI components in Flutter used to trigger actions when pressed. Flutter provides several types of buttons, each with its specific use case and styling options.
+
+### Types of Buttons in Flutter
+
+1. **TextButton**
+2. **ElevatedButton**
+3. **OutlinedButton**
+4. **IconButton**
+5. **FloatingActionButton**
+6. **DropdownButton**
+7. **PopupMenuButton**
+8. **BackButton**
+9. **CloseButton**
+
+### Explanation of Two Button Types
+
+#### 1. ElevatedButton
+
+The `ElevatedButton` is a material design button that rises when pressed, adding a sense of depth and emphasis.
+
+**Key Properties:**
+- `onPressed`: A callback function that gets called when the button is pressed.
+- `child`: The widget to display inside the button, typically a `Text` widget.
+- `style`: Used to customize the button's appearance, such as background color, elevation, padding, etc.
+
+**Example:**
+```dart
+ElevatedButton(
+  onPressed: () {
+    // Handle button press
+  },
+  child: Text('Elevated Button'),
+  style: ElevatedButton.styleFrom(
+    primary: Colors.blue, // Background color
+    onPrimary: Colors.white, // Text color
+    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+    elevation: 5, // Elevation
+  ),
+)
+```
+
+**Usage Scenario:**
+- Use `ElevatedButton` when you want to draw attention to a primary action, such as submitting a form or proceeding to the next step in a process.
+
+#### 2. TextButton
+
+The `TextButton` is a simple button that does not have elevation or borders, making it ideal for less prominent actions.
+
+**Key Properties:**
+- `onPressed`: A callback function that gets called when the button is pressed.
+- `child`: The widget to display inside the button, typically a `Text` widget.
+- `style`: Used to customize the button's appearance, such as text color, padding, etc.
+
+**Example:**
+```dart
+TextButton(
+  onPressed: () {
+    // Handle button press
+  },
+  child: Text('Text Button'),
+  style: TextButton.styleFrom(
+    primary: Colors.blue, // Text color
+    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+  ),
+)
+```
+
+**Usage Scenario:**
+- Use `TextButton` for less critical actions, such as "Cancel" or "Learn More," where a less prominent appearance is appropriate.
+
+### Summary
+
+Buttons in Flutter are versatile and cater to various user interaction needs. The `ElevatedButton` is suitable for primary actions, providing a raised appearance to draw attention, while the `TextButton` is ideal for secondary actions, offering a simple and unobtrusive look. Understanding the different types of buttons and their appropriate usage helps in creating intuitive and user-friendly Flutter applications.
+
 # Q.16 Write A Short Note On TextField widget 
 # Q.17 Write A Short Note On Stack widget 
 # Q.18 What is SQLite Database In Flutter? Why is it used? 
