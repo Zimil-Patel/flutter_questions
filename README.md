@@ -40,7 +40,7 @@ choice for demanding mobile applications. As a result the number of targeted use
 
 # Q.2 . Explain the flutter architecture.
 
-![Screenshot 2024-07-03 at 1 39 29 PM](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/7e9ed878-2df0-4c78-b0e5-8d13983546db)
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/7e9ed878-2df0-4c78-b0e5-8d13983546db" height="500" width="500">
 
 1. **Flutter Engine**
 2. **Foundation Library**
