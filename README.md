@@ -1322,7 +1322,7 @@ In this example:
 
 The `TextField` widget is essential for creating interactive and user-friendly applications in Flutter, offering flexibility and a wide range of customization options.
 
-![textfield](https://github.com/Zimil-Patel/flutter_questions/assets/112332000/eed69e3f-4dd2-4685-a18f-dca7aa48faf3)
+<img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/eed69e3f-4dd2-4685-a18f-dca7aa48faf3" height="580" width="280">
 
 # Q.17 Write A Short Note On Stack widget 
 
