@@ -93,7 +93,7 @@ choice for demanding mobile applications. As a result the number of targeted use
 | <div align = "center"> Point </div> | <div align = "center"> Statless Widget </div>| <div align = "center"> Stateful Widget </div> |
 | :-------------- | :-------------- | :-------------- |
 | Type |1. Static widgets |1. Dynamic Widgets |
-| Data change |2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
+| Depend Data change |2. They do not depend on any data change or any behavior change. |2. They can be updated during runtime based on user action or data change. |
 | Store info |3. They do not store any state information. |3. They store state information object to update widget on user interaction |
 | Render |4. They will be rendered once and will not update themselves | 4. They can re-render if the input data changes or if Widget’s state changes. |
 | Memory |5. Loads in memory once statically | 5. Loads in memory dynamically |
