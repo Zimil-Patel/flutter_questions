@@ -2,7 +2,8 @@ import 'dart:io';
 
 class CascadeOpe {
   late int _a, _b, _c;
-  static final int a = 10;
+  // static final int x = 10;
+
   aValue(int a) {
     this._a = a;
   }
