@@ -42,6 +42,30 @@ choice for demanding mobile applications. As a result the number of targeted use
 
 In this section, we are going to discuss the architecture of the Flutter framework. The Flutter architecture mainly comprises of four components.
 
++------------------------------------------------------+
+|      Flutter Framework / Foundation librabries       |
+|                                                      |
+|  +-----------------------------------------------+   |
+|  |               Material and Cupertino          |   |
+|  +-----------------------------------------------+   |
+|  |                   Widgets Layer               |   |
+|  +-----------------------------------------------+   |
+|  |                   Rendering Layer             |   |
+|  +-----------------------------------------------+   |
+|  |                  Gestures Layer               |   |
+|  +-----------------------------------------------+   |
+|  |                  Foundation Layer             |   |
+|  +-----------------------------------------------+   |
+|                                                      |
++------------------------------------------------------+
+|                    Flutter Engine                    |
+|  (Skia, Dart runtime, Text rendering, etc.)          |
++------------------------------------------------------+
+|                Platform-Specific Embedding           |
+|  (iOS, Android, Web, Desktop)                        |
++------------------------------------------------------+
+
+
 1. **Flutter Engine**
 2. **Foundation Library**
 3. **Widgets**
@@ -57,6 +81,7 @@ In this section, we are going to discuss the architecture of the Flutter framewo
 
 - It contains all the required packages for the basic building blocks of writing a Flutter application. 
 - These libraries are written in Dart language.
+- It includes a rich set of Material Design and Cupertino (iOS-style) widgets, and it offers layers for rendering, animation, gestures, and more.
 
 ### **Widgets**
 
