@@ -10,6 +10,7 @@
 - Flutter UI software development kit used to build natively compiled applications for mobile, web, and desktop from a single codebase. Here are some advantages and disadvantages of using Flutter:
 
 
+
 ### Advantages:
 
 1. **Open-Source**: Flutter is a free and open-source framework, making it accessible to a wide range of developers and companies. The large community of developers and users working with the framework helps to ensure that it continues to evolve and expand its capabilities. 
@@ -28,6 +29,7 @@
 choice for demanding mobile applications. As a result the number of targeted users increases
 
 ### Disadvantages:
+
 
 1. **Large App Size**: Flutter apps tend to have larger file sizes compared to their native counterparts because they include Flutter framework and engine, which can affect download and installation times.
 
