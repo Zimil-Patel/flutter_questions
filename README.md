@@ -37,7 +37,6 @@ choice for demanding mobile applications. As a result the number of targeted use
 
 5. **Integration with Native Code**: While Flutter provides mechanisms for integrating with native code, complex integrations may require additional effort and expertise, especially when dealing with platform-specific APIs and functionalities.
 
-
 # Q.2 . Explain the flutter architecture.
 
 <img src="https://github.com/Zimil-Patel/flutter_questions/assets/112332000/7e9ed878-2df0-4c78-b0e5-8d13983546db" height="500" width="500">
