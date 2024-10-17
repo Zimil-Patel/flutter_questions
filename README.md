@@ -1,6 +1,5 @@
 <div align = "center"><h1>Flutter Final Questions 03July24 </h1></div>
 
-
 # Q.1 What is Flutter?Write the Advantages and Disadvantages of Flutter
 
 
