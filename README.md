@@ -26,7 +26,6 @@ choice for demanding mobile applications. As a result the number of targeted use
 
 ### Disadvantages:
 
-
 1. **Large App Size**: Flutter apps tend to have larger file sizes compared to their native counterparts because they include Flutter framework and engine, which can affect download and installation times.
 
 2. **Limited Libraries**: While Flutter has a growing ecosystem of packages and libraries, it may still lack certain libraries or have fewer options compared to more established frameworks like React Native or native development.
