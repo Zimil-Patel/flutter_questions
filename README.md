@@ -11,6 +11,7 @@
 
 ### Advantages:
 
+
 1. **Open-Source**: Flutter is a free and open-source framework, making it accessible to a wide range of developers and companies. The large community of developers and users working with the framework helps to ensure that it continues to evolve and expand its capabilities. 
 
 2. **Cross-Platform Development**: Flutter allows developers to write code once and deploy it across multiple platforms, including iOS, Android, web, and desktop, saving time and effort in development.
