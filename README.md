@@ -1,6 +1,5 @@
 <div align = "center"><h1>Flutter Final Questions 03July24 </h1></div>
 
-
 # Q.1 What is Flutter?Write the Advantages and Disadvantages of Flutter
 
 - Flutter is a free and open-source mobile UI framework created by Google and released in May 2017. In a few words, it allows you to create a native mobile application with only one codebase.
@@ -10,7 +9,6 @@
 - Flutter UI software development kit used to build natively compiled applications for mobile, web, and desktop from a single codebase. Here are some advantages and disadvantages of using Flutter:
 
 ### Advantages:
-
 
 1. **Open-Source**: Flutter is a free and open-source framework, making it accessible to a wide range of developers and companies. The large community of developers and users working with the framework helps to ensure that it continues to evolve and expand its capabilities. 
 
